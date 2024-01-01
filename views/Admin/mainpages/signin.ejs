@@ -1,0 +1,55 @@
+<%- include("../partial/header.ejs") %>
+    <main class="bg">
+        <section class="py-5">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-12 col-lg-10 col-md-8 ">
+                        <div class="cardadjust">
+                            <div class="card carddesign">
+                                <div class="card-body cardcont">
+                                    <h5 class="card-title">Log In</h5>
+                                    <div class="card-text"><br>
+                                        <form action="/Admin/LogIn" method="post">
+                                            <div class="row">
+                                                <div class="row mb-3">
+                                                    <label for="Uemail" class="col-sm-4 col-form-label"><b>Email</b></label>
+                                                    <div class="col-md-8">
+                                                        <input type="email" class="form-control Cdetails" id="Uemail" name="Uemail" placeholder="name@example.com" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="Upass" class="col-md-4 col-sm-4 col-form-label">
+                                                        <b>Password</b></label>
+                                                    <div class="col-md-8">
+                                                        <input type="password" class="form-control Cdetails" id="Upass" name="Upass" placeholder="************" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <!-- <input type="submit" class="btn-sm" value="Send"> -->
+                                                    <button type="submit" class="bttn ">Sign In</button>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <br>
+
+                                    </div>
+                                    <% if ( error && error.length> 0 ) { %>
+                                        <div class="alert alert-danger" role="alert">
+                                            <%= error %>
+                                        </div>
+                                        <% } %>
+                                            <% if ( success && success.length> 0 ) { %>
+                                                <div class="alert alert-info" role="alert">
+                                                    <%= success %>
+                                                </div>
+                                                <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include("../partial/footer.ejs") %>

@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* CSS for title */
+
+.ed-blog {
+    padding-right: 2vh;
+}
+
+.home-pic {
+    border-radius: 20px;
+}
+
+
+/* Logo Rotation */
+
+.coin {
+    animation: animate 9s linear 10;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:322px) {
+    .coin {
+        margin-left: 117%;
+    }
+}
+
+
+/* CSS for margin */
+
+.field-margin {
+    margin: 1rem;
+}
+
+
+/* CSS for Navbar */
+
+.navcolor {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-style: none;
+    transition: all 3s;
+}
+
+a:hover {
+    text-decoration: underline solid darkblue;
+}
+
+.navbar-inner {
+    background: transparent;
+}
+
+
+/* CSS for button */
+
+.bttn {
+    width: 10rem;
+    height: 3rem;
+    background-color: linen;
+    border: outset darkblue;
+    margin-left: 70%;
+    border-radius: 5px;
+}
+
+.bttn:hover {
+    background-color: aliceblue;
+    border-color: purple;
+    color: black;
+    border: inset purple;
+    font-weight: bold;
+}
+
+.bttn a:hover {
+    color: black;
+}
+
+.btn-1 {
+    background-color: lightblue;
+    color: black;
+    margin: auto 0rem;
+    border-radius: 0.5rem;
+    height: 40px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    transition: all 0.6s;
+}
+
+.btn-1:hover {
+    color: black;
+    background-color: white;
+    border-color: lightblue;
+}
+
+.btn-2 {
+    background-color: lavenderblush;
+    color: black;
+    border: 2px lightcyan solid;
+    border-radius: 0.5rem;
+    padding-top: 1px;
+    /* size: 1vw auto; */
+    height: 40px;
+    padding-bottom: 1px;
+    margin: auto 1em;
+    transition: all 0.6s;
+}
+
+.btn-2:hover {
+    color: black;
+    background-color: lavenderblush;
+    border-color: lightblue;
+}
+
+
+/* CSS for Contact image */
+
+.contact-p-4 {
+    padding-top: 10rem;
+}
+
+
+/* CSS for body */
+
+.bodyallpages {
+    background-color: lightblue;
+}
+
+
+/* Required margin for form content */
+
+.req {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/* Content Align */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: "40%";
+}
+
+
+/* CSS for login  */
+
+.login {
+    font-weight: bold;
+    /* margin-left: 40%; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* CSS for Signup */
+
+.signup {
+    margin-top: 10%;
+    margin-left: 32%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* CSS for main content of index page */
+
+.maincontent {
+    background-color: royalblue;
+}
+
+
+/* CSS for heading of  */
+
+.heading1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* CSS for Login and signup form */
+
+.uform {
+    margin: 2rem;
+}
+
+
+/* CSS for Cards */
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card {
+    border-color: black;
+    margin: 1vh auto;
+    padding: 1em;
+}
+
+.border {
+    background-color: transparent;
+    border-radius: 1vh;
+    border: solid black;
+}
+
+
+/* CSS for row */
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* CSS for Column index page */
+
+.column {
+    float: right;
+    width: 70%;
+}
+
+.sidecol {
+    float: left;
+    width: 25%;
+}
+
+
+/* CSS for blog size of blog page */
+
+.blogsize {
+    width: 75%;
+    margin-left: 18%;
+    margin-right: 2%;
+}
+
+
+/* CSS for background color */
+
+.bgfooter {
+    background: white;
+    position: relative;
+    margin-bottom: 0%;
+}
+
+.m-footer {
+    margin-bottom: -24px;
+}
+
+
+/* css for contact page's form */
+
+.contact {
+    background-color: black;
+    opacity: 0.3;
+}
+
+
+/* CSS for textarea */
+
+.blogformitem {
+    width: 67vw;
+    height: 10vh;
+}
+
+.blogformtextarea {
+    width: 25rem;
+    height: 7rem;
+    padding: .5rem;
+}
+
+
+/* To make responsive layout */
+
+@media screen and (max-width:600px) and (min-width:500px) {
+    .login {
+        margin-top: 12%;
+        margin-left: 20%;
+    }
+    .column {
+        width: 100%;
+    }
+    .column.side,
+    .column.main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .signup {
+        margin-top: 8%;
+        margin-left: 32%;
+    }
+}
+
+
+/* CSS for User page */
+
+.userprofileheading {
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+    color: brown;
+}
+
+
+/* CSS ends */

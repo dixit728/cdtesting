@@ -1,0 +1,35 @@
+<!-- User Profile -->
+<%- include("../partial/header.ejs") %>
+    <main>
+        <section class="py-5">
+            <div class="container-fluid udiv">
+                <div class="card" style="width: 40rem;">
+                    <h2 class="userprofileheading">
+                        Profile
+                    </h2>
+                    <hr>
+                    <form class="row g-3 uform" action="show">
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label">Email: <%= data.Uemail %> </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputnumber" class="form-label">Contact No: <%= data.Uphone %></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputfirstname" class="form-label">First Name: <%= data.Ufname %></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputlastname" class="form-label">Last Name: <%= data.Ulname %></label>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address: <%= data.Uaddress %></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City: <%= data.Ucity %></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include("../partial/footer.ejs") %>

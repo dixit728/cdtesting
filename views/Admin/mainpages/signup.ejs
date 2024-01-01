@@ -1,0 +1,42 @@
+<%- include("../partial/header.ejs") %>
+    <main class="py-5">
+        <section class="section-admin-user">
+            <div class="container card user-profile">
+                <form class="row g-3" action="/Admin/Add" method="post">
+                    <div class="container-fluid profileheading">
+                        <h2>
+                            <center>
+                                <i>Add Admin</i>
+                            </center>
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Ufname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="Ufname" name="Ufname">
+                    </div>
+                    <div class=" col-md-6 ">
+                        <label for="ulname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="ulname" name="ulname">
+                    </div>
+                    <div class=" col-md-6">
+                        <label for="uemail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="uemail" name="uemail">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="uphone" class="form-label">Contact No</label>
+                        <input type="text" class="form-control" id="uphone" name="uphone">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="upass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="upass" name="upass">
+                    </div>
+                    <div class="container-fluid text-center">
+                        <br>
+                        <button type="submit" class="btn-sm">Save Admin</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partial/footer.ejs") %>

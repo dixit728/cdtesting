@@ -1,0 +1,54 @@
+<%- include('../partial/header.ejs') %>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="adminpageheading">
+                    <h1>
+                        View All Blog
+                    </h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <% for(var i=0; i < data.length; i++) { %>
+                    <div class="card text-left">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                            <img src="/upimages/<%= data[i].BlogImage %>" alt="Product_Img" class="img-product" width="50%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Title:
+                                        <%= data[i].BlogTitle %>
+                                    </h4>
+                                    <p class="card-text">
+                                        <div class="row">
+                                            <form action="">
+                                                <div class="col-12 col-md-12">
+                                                    <label for="">Written By : <%= data[i].BlogCreatedBy %></label>
+                                                </div>
+                                                <br>
+                                                <div class="col-12">
+                                                    <a class="btn btn-primary" href="/blog/<%= data[i]._id %>" style="margin-bottom: 10px;">Read
+                                                            more...</a>
+                                                    <a class="btn btn-danger" href="./Delete/<%= data[i]._id %>" style="margin-bottom: 10px;"> Delete</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+    </main>
+    <%- include('../partial/footer.ejs') %>

@@ -1,0 +1,45 @@
+<%- include('../partial/header') %>
+    <section>
+        <div class="container">
+            <div class="container-fluid card blogsize">
+                <div class="row">
+                    <div class="col-12 text-center">
+
+                        <h1>
+                            Title : <i><%= data.BlogTitle %></i>
+                        </h1>
+                        <h4>Written by: <i>
+                                <%= data.BlogCreatedBy %>
+                            </i></h4>
+                        <h5><i> Created on:</i>
+                            <%= data.BlogCreatedDate %>
+                        </h5>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 ">
+                        <p class="text-justify">
+                            <%= data.BlogContent %>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="/upimages/<%= data.BlogImage %>" alt="blog-image" class="img-fluid center-block">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <b><i><%= data.BlogTags %></i></b>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <%- include('../partial/footer') %>

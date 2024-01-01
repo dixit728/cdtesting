@@ -1,0 +1,65 @@
+<%- include("../partial/header.ejs") %>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="adminpageheading">
+                    <h1>
+                        View All Admin
+                    </h1>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div class="row border-5">
+                        <div class="col-12 ">
+                            <div class=" border row font-weight-bold text-center">
+                                <div class=" border col-md-2">
+                                    First Name
+                                </div>
+                                <div class="border col-md-2">
+                                    Last Name
+                                </div>
+                                <div class=" border col-md-4">
+                                    Email
+                                </div>
+                                <div class="border col-md-2">
+                                    Phone
+                                </div>
+                                <div class="border col-md-2">
+                                    Status
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row border">
+                        <div class="col-12 border">
+                            <% data.forEach(data=> { %>
+                                <div class=" border row">
+                                    <div class=" border col-md-2">
+                                        <%- data.UFname %>
+                                    </div>
+                                    <div class="border col-md-2">
+                                        <%- data.ULname %>
+                                    </div>
+                                    <div class=" border col-md-4">
+                                        <%- data.UEmail %>
+                                    </div>
+                                    <div class="border col-md-2">
+                                        <%- data.UPhone %>
+                                    </div>
+                                    <div class="border col-md-2">
+                                        <%- data.Ustatus %>
+                                    </div>
+                                </div>
+                                <br>
+                                <% }) %>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+
+    <%- include("../partial/footer.ejs") %>

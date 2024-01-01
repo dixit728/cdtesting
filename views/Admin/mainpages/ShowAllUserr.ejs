@@ -1,0 +1,41 @@
+<%- include("../partial/header.ejs") %>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="adminpageheading">
+                    <h1>
+                        View All User
+                    </h1>
+                    <hr>
+                </div>
+                <% data.forEach(data => { %>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card">
+                                <div class="container-fluid">
+                                    <form action="">
+                                        <div>
+                                            <label for="">Name: <%- data.Ufname %> <%- data.Ulname %></label>
+                                        </div>
+                                        <div>
+                                            <label for="">Email: <%- data.Uemail %></label>
+                                        </div>
+                                        <div>
+                                            <label for="">Phone: <%- data.Uphone %></label>
+                                        </div>
+                                        <div>
+                                            <label for="">Status: <%- data.Ustatus %></label>
+                                        </div>
+                                    </form>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partial/footer.ejs") %>

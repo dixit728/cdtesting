@@ -1,0 +1,41 @@
+<%- include("../partial/header") %>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="" action="/sendemail" method="post">
+                        <center>
+                            <img src="/images/query.png" alt="Query_Icon" width="30%" class="coin">
+                        </center>
+                        <br>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Name</label>
+                            <input type="text" name="uname" class="form-control" id="formGroupExampleInput" placeholder="Arzoo Naushad">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+                            <input type="email" name="uemail" class="form-control" id="formGroupExampleInput2" placeholder="@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Phone Number</label>
+                            <input type="text" name="uphoneno" class="form-control" id="formGroupExampleInput" placeholder="+91 9210xxxxxx">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <label for="floatingTextarea2">Comments</label>
+                                <textarea class="form-control" name="message" placeholder="Message" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <center>
+                                <button class="btn-sm" type="submit"> Send</button>
+                            </center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <%- include("../partial/footer") %>

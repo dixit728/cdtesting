@@ -1,0 +1,19 @@
+<%- include('../partial/header') %>
+
+
+    <section>
+        <div class="container">
+            <div class="col-12 col-md-12">
+                <% for(var i=0; i < data.length; i++) { %>
+                    <div class="card">
+                        <p>
+                            <%= data[i].BlogTitle %>
+                                <img src="/upimages/<%= data[i].BlogImage %>" width="50px" height="50px">
+                        </p><button type="button" class="bttn"><a href="/blog/<%= data[i]._id %>">Read
+                            more...</a></button>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </section>
+    <%- include('../partial/footer') %>

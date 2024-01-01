@@ -1,0 +1,36 @@
+<%- include("../partial/header.ejs") %>
+    <div class="container">
+        <section class="py-5">
+            <div class="container">
+                <div class="adminpageheading">
+                    <h1>
+                        Add New Blog
+                    </h1>
+                    <hr>
+                </div>
+                <div class="container">
+                    <form action="/blog/saveblog" method="post" role="form" enctype="multipart/form-data">
+                        <div class="container field-margin ">
+                            <input type="text" name="btitle" class="blogformitem" placeholder="Blog title">
+                        </div>
+                        <div class="container field-margin">
+                            <input type="file" name="bimage" value="upload your image" placeholder="upload your image">
+                        </div>
+                        <div class="container field-margin">
+                            <textarea type="text" class="blogformtextarea" name="bcontent" placeholder="Content: "></textarea>
+                        </div>
+                        <div class="container field-margin">
+                            <input type="text" name="bcreatedby" class="blogformitem" placeholder="Blog Created by: ">
+                        </div>
+                        <div class="container field-margin">
+                            <input type="text" name="btag" class="blogformitem" placeholder="Blog Tags">
+                        </div>
+                        <div class="container field-margin">
+                            <input type="submit" class="btn-sm" name="bsubmit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <%- include("../partial/footer.ejs") %>
